@@ -179,7 +179,7 @@ module Myxi
       Myxi.logger.debug "[#{id}] Session closed"
       @event_loop.sessions.delete(self)
       @queue.delete if @queue
-      @channel.close if @channel
+      @channel.close if @channel && @channel.open?
       while callback = @closure_callbacks.shift
         callback.call
       end
