@@ -85,6 +85,10 @@ module Myxi
               e.backtrace.each do |line|
                 Myxi.logger.info('  ' + line)
               end
+              Thread.list.each do |t|
+                Myxi.logger.info "   =============== Begin Thread ==============="
+                Myxi.logger.info t.backtrace.join("\n")
+              end
             rescue
             end
           end
