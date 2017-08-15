@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.authors       = ["Adam Cooke"]
   s.email         = ["me@adamcooke.io"]
-  s.add_runtime_dependency 'bunny', '~> 2.5.1'
+  s.add_runtime_dependency 'bunny', '~> 2.7.0'
   s.add_runtime_dependency 'websocket', '~> 1.2.0'
   s.add_runtime_dependency 'nio4r', '~> 1.2'
   s.add_runtime_dependency 'timers', '~> 4.1.2'
